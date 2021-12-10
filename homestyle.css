@@ -1,0 +1,206 @@
+/* travel theme*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+/* apply a natural box layout model to all elements */
+
+*,
+*:before,
+*:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}
+::-webkit-scrollbar{width: 8px;}::-webkit-scrollbar-track{background: #D24000;}::-webkit-scrollbar-thumb{background: #D24000;}::-webkit-scrollbar-thumb:hover{background: #fff;}
+/* CLEARFIX */
+
+.block:after,
+.row:after,
+header:after,
+footer:after,
+.cf:after {
+		content: "";
+		display: table;
+		clear: both;
+}
+
+header,
+footer,
+.block {
+		width: 95%;
+		max-width: 75em;
+		/*Set Your Max-width for Desktop*/
+		
+		margin: 0 auto;
+}
+
+body {
+		font-family: 'Roboto Slab', serif;
+		font-weight: 300;
+		background: #D24000;
+		color: #fff;
+}
+
+img {
+		max-width: 100%;
+		height: auto;
+		vertical-align: bottom;
+  background-color:#D24000;
+}
+
+a {
+		color: white;
+}
+
+#hero {
+		background: #D24000;
+		color: #fff;
+		position: relative;
+		min-height: 800px
+}
+
+#mast {
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 75%;
+}
+
+.arrow {
+		display: block;
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		right: 0;
+		height: 45px;
+		width: 45px;
+		margin: 0 auto;
+		font-size: 4em;
+}
+
+#mast>h2 {
+		font-weight: 300;
+}
+
+#navigation {
+		background: #D24000;
+}
+
+.logo {
+		float: left;
+		padding: 1em 0;
+  
+}
+
+nav[role=navigation] {
+		width: 70%;
+		float: right;
+}
+
+nav[role=navigation] ul {
+		margin: 0;
+		padding: 1em 0;
+		text-align: right;
+}
+
+nav[role=navigation] li {
+		display: inline-block;
+		margin: 0.25em 0.75em;
+}
+
+nav[role=navigation] li a {
+		color: #f9f9f9;
+		text-decoration: none;
+}
+
+nav[role=navigation] li a:hover {
+  border-bottom: 3px solid white;
+  transition: 0.5s;
+}
+
+
+.sectionHeader {
+		display: block;
+		margin: 1em auto;
+		font-size: 3em;
+		font-family: 'Roboto', serif;
+		font-weight: 900;
+		text-align: center;
+		text-transform: lowercase;
+}
+
+#fullGrid {
+		width: 100%;
+		overflow: hidden;
+  background-color:#D24000;
+  color:#fff;
+}
+
+.fullGridItem {
+		display: inline-block;
+		width: 25%;
+		margin: 0 !important;
+}
+
+#footer {
+		text-align: center;
+		color: fff;
+		padding-top: 1em;
+  background-color:#D24000;
+}
+
+#footer a {
+		color: #fff;
+		text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+		.fullGridItem {
+				width: 33.33%;
+		}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+		.fullGridItem {
+				width: 50%;
+		}
+}
+
+@media only screen and (max-width: 320px) {
+		.fullGridItem {
+				width: 100%;
+		}
+}
+
+/* typing animation */
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}

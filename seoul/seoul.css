@@ -1,13 +1,25 @@
+body{
+  background: #4a4e69;
+  margin: 0;
+  padding: 0;
+  color: #a2a2a2;
+  font-family: 'Courier New', monospace;
+}
+
 button{
-  background-color: #a2a2a2;
+  background-color: transparent;
   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  /* font-size: 16px; */
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+
 }
 
 .button{
@@ -17,6 +29,7 @@ button{
 
 button:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom: 3px solid #a2a2a2;
   transition: 0.3s;
 }
 
@@ -41,11 +54,6 @@ button:hover{
 
 /*blog css*/
 /*rotating title*/
-body{
-  background: #4a4e69;
-  margin: 0;
-  padding: 0;
-}
 
 .wrapper{
   position: absolute;
@@ -143,6 +151,7 @@ input:focus{
 	 box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
 	 margin-bottom: 1.6%;
 	 background: #fff;
+   color: #4a4e69;
 	 line-height: 1.4;
 	 font-family: sans-serif;
 	 border-radius: 5px;

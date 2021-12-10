@@ -1,9 +1,9 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.height = scrolled + "%";
+var countryElements = document.getElementById('countries').childNodes;
+var countryCount = countryElements.length;
+for (var i = 0; i < countryCount; i++) {
+  countryElements[i].onclick = function () {
+    alert('This is ' + this.getAttribute('data-name'));
+  }
 }
+
+// background planes
